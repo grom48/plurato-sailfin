@@ -1,0 +1,165 @@
+:root {
+    /* Fonts */
+    --poppins: 'Poppins', sans-serif;
+    /* Colors */
+    --black: #000;
+    --white: #fff;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--poppins);
+}
+
+header {
+    margin: 0.625rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo img {
+    width: 80%;
+    margin-top: 15px;
+}
+
+.eu-projects {
+    display: flex;
+    align-items: center;
+    width: 195px;
+}
+
+.eu-projects a {
+    position: relative;
+    color: var(--black);
+    text-decoration: none;
+    font-weight: 400;
+    margin-right: 20px;
+    font-size: 1.2rem;
+}
+
+.eu-projects a::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: var(--black);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: scale(0, 1);
+    transition: all 0.3s ease-in-out;
+}
+
+.eu-projects a:hover::after {
+    transform: scale(1, 1);
+}
+
+.eu-projects img {
+    width: 20%;
+}
+
+.hamburger {
+    z-index: 100;
+}
+
+.hamburger svg {
+    z-index: 100;
+}
+
+.ham {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 400ms;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.hamRotate.active {
+  transform: rotate(45deg);
+}
+
+.hamRotate180.active {
+  transform: rotate(180deg);
+}
+
+.line {
+  fill: none;
+  transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+  stroke: var(--black);
+  stroke-width: 5.5;
+  stroke-linecap: round;
+}
+
+.ham1 .top {
+  stroke-dasharray: 40 139;
+}
+
+.ham1 .bottom {
+  stroke-dasharray: 40 180;
+}
+
+.ham1.active .top {
+  stroke-dashoffset: -98px;
+}
+
+.ham1.active .bottom {
+  stroke-dashoffset: -138px;
+}
+
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed; 
+    z-index: -1; 
+    left: 0;
+    top: 0;
+    background-color: rgb(225,225,225); 
+    background-color: rgba(225, 225,225, 0.9); 
+    overflow-x: hidden; 
+    transition: 0.5s; 
+}
+
+.links {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    list-style: none;
+    align-items: center;
+    text-align: center;
+}
+
+.links li {
+    margin-right: 1.125rem;
+}
+
+.links li a{
+    position: relative;
+    font-size: 2rem;
+    text-decoration: none;
+    color: var(--white);
+}
+
+.links li a:after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: var(--white);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: scale(0, 1);
+    transform-origin: 0% 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+.links li a:hover::after {
+    transform: scale(1,1);
+}
