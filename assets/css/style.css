@@ -96,20 +96,25 @@ nav {
   stroke-linecap: round;
 }
 
-.ham1 .top {
-  stroke-dasharray: 40 139;
+.ham .top {
+  stroke-dasharray: 40 130;
 }
-
-.ham1 .bottom {
-  stroke-dasharray: 40 180;
+.ham .middle {
+  stroke-dasharray: 40 140;
 }
-
-.ham1.active .top {
-  stroke-dashoffset: -98px;
+.ham .bottom {
+  stroke-dasharray: 40 205;
 }
-
-.ham1.active .bottom {
-  stroke-dashoffset: -138px;
+.ham.active .top {
+  stroke-dasharray: 75 130;
+  stroke-dashoffset: -63px;
+}
+.ham.active .middle {
+  stroke-dashoffset: -102px;
+}
+.ham.active .bottom {
+  stroke-dasharray: 110 205;
+  stroke-dashoffset: -86px;
 }
 
 .overlay {

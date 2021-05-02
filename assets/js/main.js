@@ -1,4 +1,4 @@
-const hamburger = document.querySelector(".hamburger");
+const hamburger = document.querySelector(".ham");
 const overlay = document.querySelector(".overlay")
 
 hamburger.addEventListener("click", () => {
