@@ -15,7 +15,11 @@ body {
 }
 
 header {
-  margin: 0.625rem;
+  background-image: url('../img/background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
 }
 
 nav {
@@ -23,20 +27,24 @@ nav {
   justify-content: space-between;
 }
 
+.logo .half-circle {
+  width: 500px;
+  height: 500px;
+  border-radius: 90%;
+  background-color: var(--white);
+  margin-top: -55%;
+}
+
 .logo img {
-  width: 80%;
-  margin-top: 15px;
+  margin-top: -70%;
+  margin-left: 20%;
 }
 
 .eu-projects {
   display: flex;
-  align-items: center;
+  align-items: start;
   width: 195px;
-}
-
-.eu-projects a {
-  text-decoration: none;
-  color: var(--oceanBlue);
+  margin-top: 20px;
 }
 
 .europe {
@@ -44,28 +52,22 @@ nav {
 }
 
 .main {
-  position: relative;
-  color: var(--oceanBlue);
+  color: var(--black);
+  background-color: var(--white);
+  border-radius: 11px;
+  padding: 10px 15px;
   text-decoration: none;
   font-weight: 400;
   margin-right: 20px;
   font-size: 1.2rem;
+  border: 1px solid var(--white);
+  transition: 0.3s all;
 }
 
-.main::after {
-  content: "";
-  width: 100%;
-  height: 2px;
-  background-color: var(--oceanBlue);
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  transform: scale(0, 1);
-  transition: all 0.3s ease-in-out;
-}
-
-.main:hover::after {
-  transform: scale(1, 1);
+.main:hover {
+  background-color: transparent;
+  color: var(--white);
+  border: 1px solid var(--white);
 }
 
 .hamburger {
@@ -97,7 +99,7 @@ nav {
 .line {
   fill: none;
   transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
-  stroke: var(--oceanBlue);
+  stroke: var(--white);
   stroke-width: 5.5;
   stroke-linecap: round;
 }
