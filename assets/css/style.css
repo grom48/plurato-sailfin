@@ -17,7 +17,10 @@ body {
 }
 
 header {
+  position: relative;
   background-image: url('../img/background.png');
+  background-position: center center;
+  background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
@@ -29,6 +32,10 @@ nav {
   justify-content: space-between;
   width: 90%;
   margin: auto;
+}
+
+.logo {
+  text-align: center;
 }
 
 .enyoy {
@@ -69,13 +76,13 @@ nav {
 }
 
 .scroll-down {
-  float: right;
-  margin-right: 100px;
+  position: absolute;
+  right: 10%;
+  bottom: 0;
 }
 
 .scroll-content {
   position: relative;
-  margin-top: 160px;
 }
 
 .scroll-content h1 {
@@ -129,7 +136,6 @@ nav {
 .eu-projects {
   display: flex;
   align-items: start;
-  width: 195px;
   margin-top: 20px;
 }
 
@@ -262,4 +268,43 @@ nav {
 .links li a:hover::after {
   transform: scale(1, 1);
 }
+
+@media only screen and (max-width: 1000px) {
+  .logo {
+    width: 50%;
+  }
+  .logo img {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  .links {
+    flex-direction: column;
+  }
+  .main {
+    font-size: 1rem;
+    padding: 5px 10px;
+  }
+  .scroll-down img, .scroll-down, .scroll-content {
+    width: 80%;
+    text-align: center;
+  }
+  .scroll-content h1 {
+    left: 35%;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  .mouse::before {
+    transform: translate(-50%);
+  }
+  .explore {
+    font-size: 1rem;
+    padding: 10px 80px;
+  }
+  .enyoy h4 {
+    font-size: 1rem;
+  }
+} 
 
