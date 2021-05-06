@@ -4,7 +4,9 @@
   /* Colors */
   --black: #000;
   --white: #fff;
+  --ligthWhite: #f1f1f1;
   --oceanBlue: #004A74;
+  --oceanGreen: #036F71;
 }
 
 body {
@@ -25,19 +27,103 @@ header {
 nav {
   display: flex;
   justify-content: space-between;
+  width: 90%;
+  margin: auto;
 }
 
-.logo .half-circle {
-  width: 500px;
-  height: 500px;
-  border-radius: 90%;
+.enyoy {
+  margin: 120px;
+  width: 27%;
+}
+
+.enyoy h1 {
+  color: var(--white);
+  font-size: 4rem;
+  padding-bottom: 20px;
+}
+
+.enyoy h4 {
+  color: var(--ligthWhite);
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding-bottom: 50px;
+}
+
+.explore {
+  color: var(--black);
+  border-radius: 11px;
   background-color: var(--white);
-  margin-top: -55%;
+  padding: 20px 90px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-decoration: none;
+  margin-top: 20px;
+  border: 1px solid var(--white);
+  transition: all 0.3s ease;
 }
 
-.logo img {
-  margin-top: -70%;
-  margin-left: 20%;
+.explore:hover {
+  background-color: transparent;
+  border: 1px solid var(--white);
+  color: var(--white);
+}
+
+.scroll-down {
+  float: right;
+  margin-right: 100px;
+}
+
+.scroll-content {
+  position: relative;
+  margin-top: 160px;
+}
+
+.scroll-content h1 {
+  position: absolute;
+  color: var(--oceanGreen);
+  font-weight: 700;
+  font-size: 2.25rem;
+  top: 25%;
+  left: 25%;
+}
+
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 45%;
+}
+
+.mouse {
+  position: relative;
+  width: 2.2rem;
+  height: 3.5rem;
+  padding: 0.625rem 0.8rem;
+  border: 0.125rem solid var(--oceanGreen);
+  border-radius: 1.5rem;
+}
+
+.mouse::before {
+  content: '';
+  position: absolute;
+  width: 0.3rem;
+  height: 0.5rem;
+  border-radius: 25%;
+  background-color: var(--oceanGreen);
+  opacity: 1;
+  -webkit-animation: mouse 2s ease-in-out infinite;
+  -o-animation: mouse 2s ease-in-out infinite;
+  animation: mouse 2s ease-in-out infinite;
+}
+
+@keyframes mouse {
+  from {
+    opacity: 1;
+    top: 10px;
+  }
+  to {
+    opacity: 0;
+    top: 35px;
+  }
 }
 
 .eu-projects {
@@ -133,7 +219,7 @@ nav {
   left: 0;
   top: 0;
   background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.7);
   overflow-x: hidden;
   transition: 0.5s;
 }
@@ -176,3 +262,4 @@ nav {
 .links li a:hover::after {
   transform: scale(1, 1);
 }
+
