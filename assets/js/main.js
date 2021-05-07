@@ -11,12 +11,10 @@ hamburger.addEventListener("click", () => {
     }
 })
 
-function imageFun() {
-    var Image_Id = document.querySelector(".yellow-dask");
-    if (Image_Id.scr.match("assets/img/yellow-dask.svg")) {
-        Image_Id.src = "assets/img/white-dask-svg";
-    } else {
-        Image_Id.src = "assets/img/yellow-dask.svg";
+function imagefun() {
+    var Image_Id = document.getElementById('getImage');
+    if (Image_Id.src.match("assets/img/yellow-dask.svg")) {
+        Image_Id.src = "assets/img/white-dask.svg";
     }
 }
 
