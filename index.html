@@ -76,19 +76,25 @@
             <div class="col-md-4">
                 <div class="stats lines">
                     <h2>Lifetime</h2>
-                    <h1>60-80 min</h1>
+                    <div class="numbers">
+                        <h1 class="num">60</h1><span>-</span><h1 class="num">80</h1><br><span> min</span>
+                    </div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="stats lines">
                     <h2>Max Speed</h2>
-                    <h1>0-30 mph</h1>
+                    <div class="numbers">
+                        <h1>0</h1><span>-</span><h1 class="num">30</h1><span> mph</span>
+                    </div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="stats">
                     <h2>Power</h2>
-                    <h1>0-240 W</h1>
+                    <div class="numbers">
+                        <h1>0</h1><span>-</span><h1 class="num">240</h1><span> W</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -96,15 +102,72 @@
             <a href="#">
                 Read More
             </a>
-                <img src="./assets/img/icons/double-arrow.svg" alt="double-arrow">
+            <img src="./assets/img/icons/double-arrow.svg" alt="double-arrow">
         </div>
     </section>
     <section class="dask">
-        
+        <div class="row">
+            <div class="col-md-6">
+                <div class="left-dask" data-animation="animate__fadeInUp" data-animation-delay="0.5">
+                    <h1>Plurato Sailfin</h1>
+                    <p>
+                        Plurato Sailfin rises above the surface which results in a sense of flying, and lithium-polymer battery powers the silent, emission free electric motor which is easily operated by the wireless hand controller.
+                    </p>
+                    <a class="dask-btn" href="#">Dasks</a>
+                </div>
+            </div>
+            <div class="col-md-6" data-animation="animate__fadeInUp" data-animation-delay="0.7">
+                <img src="./assets/img/dask.svg" alt="dask">
+            </div>
+        </div>
+    </section>
+    <section class="diff-colors">
+        <h1 class="main-h1">Different Colors Types</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="content-colors">
+                    <h1>Plurato Sailfin offers boards of various colors. Choose the one you like best .</h1>
+                    <p>We want to make dasks good for enviroment 
+                        and smooth design with different types of colors
+                        we want to make dasks good for enviroment 
+                        and smooth design with different types of colors
+                    </p>
+                    <div class="buttons">
+                        <a href="#">Dask</a>
+                        <a href="#">Broschure</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="right-color">
+                    <div class="color-slider">
+                        <img class="yellow-dask" src="./assets/img/yellow-dask.svg" alt="yellow-dask">
+                        <div class="electric">
+                            <img src="./assets/img/icons/triangle.svg" alt="">
+                            <p>Electric Hydrofoil Board</p>
+                        </div>
+                    </div>
+                    <div class="dots">
+                        <span class="dot yellow"></span>
+                        <span class="dot white" onclick="imageFun()"></span>
+                        <span class="dot red"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
+
+
+     <!-- jQuery -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+     <!-- jQuery Counter -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
+     <!-- jQuery Waypoints -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
     <!-- Connection to JS file -->
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/animate.js"></script>
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 </body>

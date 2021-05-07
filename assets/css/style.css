@@ -9,6 +9,7 @@
   --oceanBlue: #004A74;
   --ligthBlue: #11699B;
   --oceanGreen: #036F71;
+  --grayText: #cfcfce;
 }
 
 body {
@@ -318,6 +319,12 @@ section.stats-section {
     padding: 100px 0 100px;
 }
 
+.numbers {
+  display: flex;
+  align-items: center;
+  margin-left: 142px;
+}
+
 .stats {
   position: relative;
   text-align: center;
@@ -341,7 +348,7 @@ section.stats-section {
   font-size: 4rem;
 }
 
-.stats h1 {
+.stats h1, span {
   font-size: 4.5rem;
   color: var(--ligthBlue);
   font-weight: 500;
@@ -366,15 +373,158 @@ section.stats-section {
   font-size: 2.25rem;
   font-weight: 400;
 }
+
 /*Section Dask*/
+
 section.dask {
-  margin: 100px 0;
+  margin: 200px 0;
   background-image: url("../img/daks-bg.png");
   background-size: cover;
   background-position: center center;
-  background-attachment: fixed;
   background-repeat: no-repeat;
-  width: 100%;
+  width: 100vw;
 }
 
+.left-dask {
+  padding: 100px;
+}
 
+.left-dask h1 {
+  color: var(--white);
+  font-size: 3rem;
+}
+
+.left-dask p {
+  width: 80%;
+  color: var(--white);
+  font-size: 1.5rem;
+  padding: 50px 0 100px;
+}
+
+.dask-btn {
+  background-color: var(--white);
+  color: var(--black);
+  border-radius: 11px;
+  padding: 10px 60px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* Different Color Types */
+
+.diff-colors {
+  padding: 50px 0 150px 0;
+  margin-left: 100px;
+}
+
+.main-h1 {
+  position: relative;
+  color: var(--oceanGreen);
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.main-h1::after {
+  content: '';
+  background-color: var(--oceanGreen);
+  height: 10px;
+  width: 137px;
+  position: absolute;
+  bottom: -20px;
+}
+
+.content-colors {
+  padding-top: 150px;
+}
+
+.content-colors h1 {
+  color: var(--oceanGreen);
+  font-size: 2.25rem;
+  font-weight: 700;
+}
+
+.content-colors p {
+  color: var(--grayText);
+  font-size: 1.5rem;
+  width: 70%;
+  font-weight: 500;
+  padding: 60px 0;
+}
+
+.buttons a {
+  color: var(--oceanGreen);
+  border: 1px solid var(--oceanGreen);
+  font-size: 1.125rem;
+  font-weight: 600;
+  padding: 10px 30px;
+  margin-right: 40px;
+  border-radius: 11px;
+  text-decoration: none;
+  -webkit-box-shadow: 2px 5px 4px 1px rgba(0,0,0, .25);
+  box-shadow: 2px 5px 4px 1px rgba(0,0,0, .25);
+}
+
+.buttons a:nth-of-type(1) {
+  padding: 10px 50px;
+}
+
+.right-color {
+  position: relative;
+  top: 50%;
+}
+
+.color-slider {
+  position: relative;
+  background-image: url(../img/sea-card.svg);
+  background-size: cover;
+  height: 272px;
+  width: 472px; 
+  top: 50%;
+  left: 25%;
+}
+
+.yellow-dask {
+  position: absolute;
+  top: -300px;
+  left: -25%;
+}
+
+.color-slider .electric {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 5%;
+}
+
+.electric p {
+  color: var(--white);
+  font-weight: 500;
+  padding-top: 15px;
+  padding-left: 15px;
+  font-size: 1.125rem;
+}
+
+.dots {
+  position: absolute;
+  bottom: -25%;
+  left: 48%;
+}
+
+.dot {
+  height: 25px;
+  width: 25px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.yellow {
+  background-color: #DFA25C;
+}
+
+.red {
+  background-color: #F14543;
+}
