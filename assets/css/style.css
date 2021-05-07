@@ -1,11 +1,13 @@
 :root {
   /* Fonts */
   --poppins: "Poppins", sans-serif;
+  --russo: "Russo One", sans-serif;
   /* Colors */
   --black: #000;
   --white: #ffffff;
   --ligthWhite: #f1f1f1;
   --oceanBlue: #004A74;
+  --ligthBlue: #11699B;
   --oceanGreen: #036F71;
 }
 
@@ -14,6 +16,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: var(--poppins);
+  overflow-x: hidden;
 }
 
 header {
@@ -154,6 +157,7 @@ nav {
   font-size: 1.2rem;
   border: 1px solid var(--white);
   transition: 0.3s all;
+  text-transform: uppercase;
 }
 
 .main:hover {
@@ -306,5 +310,71 @@ nav {
   .enyoy h4 {
     font-size: 1rem;
   }
-} 
+}
+
+/* Stats section*/
+
+section.stats-section {
+    padding: 100px 0 100px;
+}
+
+.stats {
+  position: relative;
+  text-align: center;
+  font-family: var(--russo);
+}
+
+.lines:after {
+  content: '';
+  height: 100%;
+  width: 10px;
+  border-radius: 6px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: var(--ligthBlue);
+}
+
+.stats h2 {
+  color: var(--black);
+  font-weight: 500;
+  font-size: 4rem;
+}
+
+.stats h1 {
+  font-size: 4.5rem;
+  color: var(--ligthBlue);
+  font-weight: 500;
+}
+
+.read-more {
+  float: right;
+  margin: 100px;
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--ligthBlue);
+  border-radius: 11px;
+  padding: 20px 40px;
+  -webkit-box-shadow: 2px 5px 4px 1px rgba(0,0,0, .25);
+  box-shadow: 2px 5px 4px 1px rgba(0,0,0, .25);
+}
+
+.read-more a{
+  text-decoration: none;
+  padding-right: 30px;
+  color: var(--ligthBlue);
+  font-size: 2.25rem;
+  font-weight: 400;
+}
+/*Section Dask*/
+section.dask {
+  margin: 100px 0;
+  background-image: url("../img/daks-bg.png");
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
 
