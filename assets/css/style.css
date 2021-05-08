@@ -520,6 +520,19 @@ section.dask {
   display: inline-block;
   margin-right: 20px;
   cursor: pointer;
+  transition: all 0.3s ease;
+  opacity: .7;
+}
+
+.dot:hover {
+  height: 30px;
+  width: 30px;
+}
+
+.dot.expand {
+  height: 30px;
+  width: 30px;
+  opacity: 1;
 }
 
 .yellow {

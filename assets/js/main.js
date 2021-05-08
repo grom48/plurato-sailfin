@@ -11,12 +11,22 @@ hamburger.addEventListener("click", () => {
     }
 })
 
-function imagefun() {
-    var Image_Id = document.getElementById('getImage');
-    if (Image_Id.src.match("assets/img/yellow-dask.svg")) {
-        Image_Id.src = "assets/img/white-dask.svg";
-    }
-}
+const white = document.querySelector(".white");
+const yellow = document.querySelector(".yellow");
+const red = document.querySelector(".red");
+let image = document.querySelector(".yellow-dask");
+
+white.addEventListener("click", () => {
+    image.src = "assets/img/white-dask.svg"
+})
+
+yellow.addEventListener("click", () => {
+    image.src = "assets/img/yellow-dask.svg"
+})
+
+red.addEventListener("click", () => {
+    image.src = "assets/img/red-dask.png"
+})
 
 
 
