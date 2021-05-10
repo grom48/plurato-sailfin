@@ -10,6 +10,7 @@
   --ligthBlue: #11699B;
   --oceanGreen: #036F71;
   --grayText: #cfcfce;
+  --brown: #303132;
 }
 
 body {
@@ -349,7 +350,7 @@ section.stats-section {
   font-size: 4rem;
 }
 
-.stats h1, span {
+.stats h1, .numbers span {
   font-size: 4.5rem;
   color: var(--ligthBlue);
   font-weight: 500;
@@ -616,3 +617,179 @@ section.dask {
   margin-right: 20px;
   cursor: pointer;
 }
+
+/* Find us */
+
+.find-us {
+  position: relative;
+  width: 100%;
+  padding-bottom: 150px;
+}
+
+.find-us .fu {
+  position: absolute;
+  left: 70%;
+}
+
+.find-us .fu:after {
+  left: -50%;
+}
+
+.find-content {
+  padding-top: 150px;
+}
+
+.buttons2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.map {
+  margin: 100px;
+  position: absolute;
+  left: 40%;
+  top: 15%;
+}
+
+.map-contacts {
+  margin: 100px;
+  width: 100%;
+}
+
+.map-contacts h2{
+  font-size: 3rem;
+  color: var(--oceanGreen);
+  font-weight: 600;
+}
+
+.map-btn {
+  background-color: var(--oceanGreen);
+  border-radius: 11px;
+  color: var(--white);
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 20px 40px;
+  width: 269px;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 1px solid var(--oceanGreen);
+}
+
+.map-btn:hover {
+  color: var(--oceanGreen);
+  border: 1px solid var(--oceanGreen);
+  background-color: transparent;
+}
+
+.copy-btn {
+  padding-top: 50px;
+  width: 100%;
+}
+
+/* Faq */
+
+.faq {
+  padding: 100px 0 100px;
+  text-align: center;
+}
+
+.faq h4 {
+  padding: 50px;
+  width: 60%;
+  margin: auto;
+  color: var(--brown);
+  font-size: 1.5rem;
+}
+
+.faq-h1 {
+  text-align: center;
+  padding-bottom: 20px;
+  font-size: 2.25rem;
+}
+
+.faq-h1::after {
+  left: 48%;
+}
+
+.accordion {
+  max-width: 900px;
+  margin: 30px auto 50px;
+}
+
+.accordion__item {
+  margin-bottom: 5px;
+}
+
+.accordion__title {
+  background: transparent;
+  padding: 20px;
+  border-bottom: 1px solid var(--hardGray);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+  font-size: var(--small);
+}
+
+.accordion__content p {
+  text-align: left;
+  font-size: 16px;
+}
+
+.accordion__title::after {
+  font-family: 'Font Awesome 5 Free';
+  content:'\f078';
+  color: var(--oceanGreen);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  width: 1em;
+  height: 1em;
+  transition: transform 0.3s ease-in;
+}
+
+.is-open .accordion__title::after {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.accordion__body {
+  border-radius: 5px;
+  height: 0;
+  overflow: hidden;
+  transition: height 0.3s ease-in-out;
+}
+
+.accordion__content {
+  background: #fff;
+  border-radius: 4px;
+  padding: 15px;
+  margin-top: 5px;
+}
+
+.more-info {
+  background-color: var(--oceanGreen);
+  border-radius: 11px;
+  padding: 20px 40px;
+  color: var(--white);
+  font-weight: 500;
+  border: 1px solid var(--oceanGreen);
+  text-decoration: none;
+  margin: auto;
+  transition: all 0.3s ease;
+}
+
+.more-info:hover {
+  background-color: transparent;
+  border: 1px solid var(--oceanGreen);
+  color: var(--oceanGreen);
+}
+
+
+
