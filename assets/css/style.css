@@ -40,6 +40,13 @@ nav {
   margin: auto;
 }
 
+nav.fixed-nav {
+  position: fixed;
+  top: 0;
+  transition: 0.3s;
+}
+
+
 .logo {
   text-align: center;
 }
@@ -669,7 +676,8 @@ section.dask {
   font-size: 1.5rem;
   font-weight: 500;
   padding: 20px 40px;
-  width: 269px;
+  letter-spacing: 1px;
+  width: 250px;
   text-align: center;
   text-decoration: none;
   margin-top: 50px;
@@ -685,8 +693,40 @@ section.dask {
 }
 
 .copy-btn {
+  position: relative;
   padding-top: 50px;
   width: 100%;
+}
+
+.tooltips {
+  position: relative;
+  margin-left: 10px;
+  font-size: 17px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  border-radius: 3px;
+  color: var(--white);
+  background-color: var(--oceanGreen);
+  opacity: 0;
+}
+
+.tooltips.show {
+  margin-left: 10px;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.tooltips::before {
+  content: '';
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  background-color: var(--oceanGreen);
+  top: 30%;
+  left: -7px;
+  transform: translateY(-50%); 
+  transform: rotate(45deg);
 }
 
 /* Faq */
@@ -790,6 +830,9 @@ section.dask {
   border: 1px solid var(--oceanGreen);
   color: var(--oceanGreen);
 }
+
+
+
 
 
 

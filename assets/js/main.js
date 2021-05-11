@@ -1,5 +1,4 @@
 $(".num").counterUp({delay:10,time: 500});
-
 const hamburger = document.querySelector(".ham");
 const overlay = document.querySelector(".overlay");
 
@@ -42,6 +41,16 @@ function Clipboard_CopyTo(value) {
     Clipboard_CopyTo('Ul. Ruđera Boškovića 19, 21000, Split');
   }
 
+  const button = document.querySelector(".copy-btn");
+  const tooltips = document.querySelector(".tooltips");
+
+  button.addEventListener("click", () => {
+    tooltips.classList.add("show");
+    setTimeout(function() {
+    tooltips.classList.remove("show");
+  }, 700)
+  })
+
   const accordion = document.querySelector('.accordion');
   const items = accordion.querySelectorAll('.accordion__item');
   
@@ -76,5 +85,25 @@ function Clipboard_CopyTo(value) {
       item.classList.add('is-open');
     }
   }
+
+  // On scroll navbar
+
+  $(function () { 
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 500) { 
+            $('.nav .main-logo ').attr('src','assets/img/logo-scroll.svg');
+        }
+        if ($(this).scrollTop() < 500) { 
+            $('.nav .main-logo').attr('src','assets/img/logo2.svg');
+        }
+    })
+    $(window).scroll(function () {
+      if($(window).scrollTop() > 200) {
+          $("nav").addClass('fixed-nav');
+      } else {
+          $("nav").removeClass('fixed-nav');
+      }
+  });
+});
 
 
