@@ -76,7 +76,7 @@ function Clipboard_CopyTo(value) {
   const toggle_item = (item) => {
     const body = item.querySelector('.accordion__body');
     const content = item.querySelector('.accordion__content');
-          
+
     if (item.classList.contains('is-open')) {
       body.removeAttribute('style');
       item.classList.remove('is-open');
@@ -86,14 +86,34 @@ function Clipboard_CopyTo(value) {
     }
   }
 
-  // On scroll navbar
+//Get the button:
+mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+    } else {
+        mybutton.style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+// On scroll navbar
 
   $(function () { 
     $(window).scroll(function () {
-        if ($(this).scrollTop() > 500) { 
-            $('.nav .main-logo ').attr('src','assets/img/logo-scroll.svg');
+        if ($(this).scrollTop() > 200) {
+            $('.nav .main-logo ').attr('src','assets/img/white-logo.svg');
         }
-        if ($(this).scrollTop() < 500) { 
+        if ($(this).scrollTop() < 200) {
             $('.nav .main-logo').attr('src','assets/img/logo2.svg');
         }
     })
