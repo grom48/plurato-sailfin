@@ -1,4 +1,5 @@
 $(".num").counterUp({delay:10,time: 500});
+
 const hamburger = document.querySelector(".ham");
 const overlay = document.querySelector(".overlay");
 
@@ -110,20 +111,36 @@ function topFunction() {
 
   $(function () { 
     $(window).scroll(function () {
-        if ($(this).scrollTop() > 200) {
-            $('.nav .main-logo ').attr('src','assets/img/white-logo.svg');
+        if ($(this).scrollTop() > 150) {
+            $('.nav .main-logo ').attr('src','assets/img/white-logo2.svg');
         }
-        if ($(this).scrollTop() < 200) {
-            $('.nav .main-logo').attr('src','assets/img/logo2.svg');
+        if ($(this).scrollTop() < 150) {
+            $('.nav .main-logo').attr('src','assets/img/logo.svg');
         }
     })
     $(window).scroll(function () {
-      if($(window).scrollTop() > 200) {
+      if($(window).scrollTop() > 150) {
           $("nav").addClass('fixed-nav');
       } else {
           $("nav").removeClass('fixed-nav');
       }
   });
 });
+
+// Click components
+$(function () {
+    $(window).on('hashchange', function () {
+        var tabContainers = $('.tabs > div'),
+            hash = window.location.hash != '' ? window.location.hash : '#first';
+
+        console.log(hash)
+
+        tabContainers.hide();
+        tabContainers.filter(hash).show();
+        $('.tabNavigation li a').removeClass('selected');
+        $('a[href="' + hash + '"]', '.tabNavigation').addClass('selected');
+    }).trigger('hashchange');
+});
+
 
 

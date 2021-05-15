@@ -62,6 +62,7 @@ nav {
   width: 90%;
   margin: auto;
   z-index: 1000;
+  padding-top: 20px;
 }
 
 nav.fixed-nav {
@@ -71,7 +72,7 @@ nav.fixed-nav {
   background: var(--oceanGreen);
   width: 100%;
   padding: 15px;
-  border-radius: 0 0px 20px 20px;
+  border-radius: 0 0 20px 20px;
 }
 
 .logo {
@@ -79,7 +80,7 @@ nav.fixed-nav {
 }
 
 .enyoy {
-  margin: 120px;
+  margin: 200px 120px 120px 120px;
   width: 27%;
 }
 
@@ -266,7 +267,7 @@ nav.fixed-nav {
   left: 0;
   top: 0;
   background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, .7);
   overflow-x: hidden;
   transition: 0.5s;
 }
@@ -607,8 +608,8 @@ section.dask {
   padding: 150px 0 150px 0;
   display: flex;
   flex-direction: column;
-  right: -50%; 
   width: 100%;
+  align-items: flex-end;
 }
 
 .top {
@@ -861,6 +862,114 @@ section.dask {
   border: 1px solid var(--oceanGreen);
   color: var(--oceanGreen);
 }
+
+/* slider styles */
+
+#mainSlider h1 {
+  -webkit-transition: font 200ms ease-out;
+  -moz-transition: font 200ms ease-out;
+  -o-transition: font 200ms ease-out;
+  transition: font 200ms ease-out;
+}
+
+
+/* footer */
+footer {
+  background-color: var(--oceanGreen);
+  padding: 50px 0 50px 100px;
+  margin-top: 150px;
+}
+
+.white-logo {
+  display: flex;
+  object-fit: contain;
+}
+
+.white-logo img {
+  margin: auto;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  height: 100%;
+  align-items: center;
+}
+
+.footer-links li a {
+  color: var(--white);
+  font-size: 2.25rem;
+  text-decoration: none;
+}
+
+.brochure {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+.brochure a {
+  margin: auto;
+  font-size: 1.5rem;
+  color: var(--oceanGreen);
+  background: var(--white);
+  padding: 10px 20px;
+  border-radius: 11px;
+  text-decoration: none;
+  border: 1px solid var(--white);
+  transition: all 0.3ms ease-in-out;
+}
+
+.brochure a:hover {
+  border: 1px solid var(--white);
+  background: transparent;
+  color: var(--white);
+}
+
+.icons {
+  height: 100%;
+  font-size: 3.5rem;
+  display: flex;
+}
+
+.icons a {
+  margin: auto;
+}
+
+.icons a i {
+  color: var(--white);
+}
+
+.down-footer {
+  padding-top: 50px;
+}
+
+.stuff-footer {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  margin-left: 32px;
+}
+
+.stuff-footer h4 {
+  color: var(--white);
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.stuff-footer p {
+  color: var(--white);
+}
+
+.copyright {
+  margin: 0;
+  width: 100%;
+  text-align: center;
+}
+
 
 
 
