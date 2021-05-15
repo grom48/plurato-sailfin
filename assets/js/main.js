@@ -1,4 +1,7 @@
+// !Brojač
 $(".num").counterUp({delay:10,time: 500});
+
+// !Hamburger
 
 const hamburger = document.querySelector(".ham");
 const overlay = document.querySelector(".overlay");
@@ -10,6 +13,8 @@ hamburger.addEventListener("click", () => {
         overlay.style.height = "50%"
     }
 })
+
+// !Promjena slike na klik
 
 const white = document.querySelector(".white");
 const yellow = document.querySelector(".yellow");
@@ -28,6 +33,7 @@ red.addEventListener("click", () => {
     image.src = "assets/img/red-dask.png"
 })
 
+// !Kopiraj adresu
 
 function Clipboard_CopyTo(value) {
     let tempInput = document.createElement("input");
@@ -51,6 +57,8 @@ function Clipboard_CopyTo(value) {
     tooltips.classList.remove("show");
   }, 700)
   })
+
+// !Accordion
 
   const accordion = document.querySelector('.accordion');
   const items = accordion.querySelectorAll('.accordion__item');
@@ -87,10 +95,10 @@ function Clipboard_CopyTo(value) {
     }
   }
 
-//Get the button:
+// *Get the button:
 mybutton = document.getElementById("myBtn");
 
-// When the user scrolls down 20px from the top of the document, show the button
+// *When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
@@ -101,13 +109,13 @@ function scrollFunction() {
     }
 }
 
-// When the user clicks on the button, scroll to the top of the document
+// *When the user clicks on the button, scroll to the top of the document
 function topFunction() {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
-// On scroll navbar
+// *On scroll navbar
 
   $(function () { 
     $(window).scroll(function () {
@@ -127,7 +135,7 @@ function topFunction() {
   });
 });
 
-// Click components
+// !Click components
 $(function () {
     $(window).on('hashchange', function () {
         var tabContainers = $('.tabs > div'),

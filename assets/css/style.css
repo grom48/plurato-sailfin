@@ -694,7 +694,7 @@ section.dask {
 .cm-dot {
   height: 25px;
   width: 25px;
-  background-color: #bbb;
+  background-color: var(--oceanGreen);
   border-radius: 50%;
   display: inline-block;
   cursor: pointer;
@@ -706,6 +706,7 @@ section.dask {
 .find-us {
   position: relative;
   width: 100%;
+  padding-top: 150px;
   padding-bottom: 150px;
 }
 
@@ -719,7 +720,7 @@ section.dask {
 }
 
 .find-content {
-  padding-top: 150px;
+  padding-top: 50px;
 }
 
 .buttons2 {
@@ -731,11 +732,11 @@ section.dask {
   margin: 100px;
   position: absolute;
   left: 40%;
-  top: 15%;
+  top: 32%;
 }
 
 .map-contacts {
-  margin: 100px;
+  margin: 200px 100px 100px 100px;
   width: 100%;
 }
 
@@ -810,6 +811,7 @@ section.dask {
 .faq {
   padding: 100px 0 100px;
   text-align: center;
+  margin-bottom: 150px;
 }
 
 .faq h4 {

@@ -126,7 +126,7 @@
         </div>
     </div>
 </section>
-<section class="diff-colors">
+<section class="diff-colors" data-animation="animate__fadeIn" data-animation-delay="0.7">
     <h1 class="main-h1">Different Colors Types</h1>
     <div class="row">
         <div class="col-md-6">
@@ -144,7 +144,7 @@
             </div>
         </div>
         <div class="col-md-6">
-            <div class="right-color">
+            <div class="right-color" data-animation="animate__fadeIn" data-animation-delay="0.7">
                 <div class="color-slider">
                     <img class="yellow-dask" src="./assets/img/yellow-dask.svg" alt="yellow-dask">
                     <div class="electric">
@@ -253,52 +253,54 @@
         </div>
 
         <div class="col-md-1">
-           <ul class="tabNavigation" style="position: absolute; top: 50%">
-               <li><a href="#first" id="1">Baterija</a></li>
-               <li><a href="#second" id="2">Daska</a></li>
-               <li><a href="#third" id="3">Upravljač</a></li>
-               <li><a href="#fourth" id="4">Hydrofoil</a></li>
-               <li><a href="#fifth" id="5">Motor</a></li>
+           <ul class="tabNavigation" style="position: absolute; top: 50%; list-style: none;">
+               <li><a href="#first" id="1"><div class="cm-dot"></div></a></li>
+               <li><a href="#second" id="2"><div class="cm-dot"></div></a></li>
+               <li><a href="#third" id="3"><div class="cm-dot"></div></a></li>
+               <li><a href="#fourth" id="4"><div class="cm-dot"></div></a></li>
+               <li><a href="#fifth" id="5"><div class="cm-dot"></div></a></li>
            </ul>
         </div>
-    </div>
-</div>
+
+    
 <section class="find-us">
     <h1 class="main-h1 fu">Find Us</h1>
-    <div class="row find-content">
-        <div class="col-md-4">
-            <div class="map-contacts">
-                <h2>Try and found your dasks at this location </h2>
-                <div class="buttons2">
-                    <a class="map-btn" href="#">Contact</a>
-                    <div class="copy-btn">
-                        <a id="Copy" class="map-btn">Copy Adress<a/>
-                            <span class="tooltips">Copied!</span>
+    <div class="row">
+        <div class="find-content">
+            <div class="col-md-4">
+                <div class="map-contacts">
+                    <h2>Try and found your dasks at this location </h2>
+                    <div class="buttons2">
+                        <a class="map-btn" href="#">Contact</a>
+                        <div class="copy-btn">
+                            <a id="Copy" class="map-btn">Copy Adress<a/>
+                                <span class="tooltips">Copied!</span>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="col-md-8">
-            <div class="map">
-                <div class="map-router">
-                    <div class="gmap_canvas">
-                        <iframe style="border-radius: 25px" ; width="880" height="500" id="gmap_canvas"
-                                src="https://maps.google.com/maps?q=Ru%C4%91era%20Bo%C5%A1kovi%C4%87a%2019%2021000%20Split,%20Croatia&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                                frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-                        <a href="https://123movies-to.org">123movies</a><br>
-                        <style>.mapouter {
-                            position: relative;
-                            text-align: right;
-                            height: 500px;
-                            width: 880px;
-                        }</style>
-                        <a href="https://www.embedgooglemap.net">embed google my maps</a>
-                        <style>.gmap_canvas {
-                            overflow: hidden;
-                            background: none !important;
-                            height: 500px;
-                            width: 880px;
-                        }</style>
+            <div class="col-md-8">
+                <div class="map">
+                    <div class="map-router">
+                        <div class="gmap_canvas">
+                            <iframe style="border-radius: 25px" ; width="880" height="500" id="gmap_canvas"
+                                    src="https://maps.google.com/maps?q=Ru%C4%91era%20Bo%C5%A1kovi%C4%87a%2019%2021000%20Split,%20Croatia&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                                    frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                            <a href="https://123movies-to.org">123movies</a><br>
+                            <style>.mapouter {
+                                position: relative;
+                                text-align: right;
+                                height: 500px;
+                                width: 880px;
+                            }</style>
+                            <a href="https://www.embedgooglemap.net">embed google my maps</a>
+                            <style>.gmap_canvas {
+                                overflow: hidden;
+                                background: none !important;
+                                height: 500px;
+                                width: 880px;
+                            }</style>
+                        </div>
                     </div>
                 </div>
             </div>
