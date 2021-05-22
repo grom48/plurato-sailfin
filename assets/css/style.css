@@ -13,6 +13,35 @@
   --brown: #303132;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius: 4px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+main {
+  width: 100%;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -54,6 +83,7 @@ header {
   background-repeat: no-repeat;
   width: 100%;
   height: 100vh;
+  z-index: 200;
 }
 
 nav {
@@ -72,8 +102,9 @@ nav.fixed-nav {
   background: var(--oceanGreen);
   width: 100%;
   padding: 15px;
+  margin: auto;
   border-radius: 0 0 20px 20px;
-}
+} 
 
 .logo {
   text-align: center;
@@ -545,7 +576,7 @@ section.dask {
 .dots {
   position: absolute;
   bottom: -25%;
-  left: 56%;
+  left: 40%;
 }
 
 .dot {
@@ -706,10 +737,14 @@ section.dask {
 /* Find us */
 
 .find-us {
-  position: relative;
   width: 100%;
+  padding: 150px 50px;
+}
+
+.map-section {
+  display: flex;
   padding-top: 150px;
-  padding-bottom: 150px;
+  padding-bottom: 50px;
 }
 
 .find-us .fu {
@@ -721,8 +756,15 @@ section.dask {
   left: -50%;
 }
 
-.find-content {
-  padding-top: 50px;
+.map-contacts {
+  padding-left: 50px;
+}
+
+.map-contacts h2{
+  font-size: 3rem;
+  color: var(--oceanGreen);
+  font-weight: 600;
+  width: 80%;
 }
 
 .buttons2 {
@@ -730,23 +772,6 @@ section.dask {
   flex-direction: column;
 }
 
-.map {
-  margin: 100px;
-  position: absolute;
-  left: 40%;
-  top: 32%;
-}
-
-.map-contacts {
-  margin: 200px 100px 100px 100px;
-  width: 100%;
-}
-
-.map-contacts h2{
-  font-size: 3rem;
-  color: var(--oceanGreen);
-  font-weight: 600;
-}
 
 .map-btn {
   background-color: var(--oceanGreen);
@@ -773,8 +798,6 @@ section.dask {
 
 .copy-btn {
   position: relative;
-  padding-top: 50px;
-  width: 100%;
 }
 
 .tooltips {
