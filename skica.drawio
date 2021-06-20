@@ -1,11 +1,11 @@
 <mxfile>
     <diagram id="nfbyJWQtqqHWuZD5Rj1X" name="Page-1">
-        <mxGraphModel dx="758" dy="357" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="753" dy="717" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
                 <mxCell id="2" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
-                    <mxGeometry x="40" y="10" width="200" height="200" as="geometry"/>
+                    <mxGeometry x="45" y="20" width="200" height="200" as="geometry"/>
                 </mxCell>
                 <mxCell id="3" value="Programiranje cile stranice" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" parent="1" vertex="1">
                     <mxGeometry x="65" y="40" width="160" height="20" as="geometry"/>

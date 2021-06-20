@@ -140,6 +140,8 @@ function scrollFunction() {
       
     });
   });
+
+  
   
   const toggle_item = (item) => {
     const body = item.querySelector('.accordion__body');
