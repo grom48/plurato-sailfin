@@ -103,7 +103,7 @@ nav.fixed-nav {
   width: 100%;
   padding: 15px;
   margin: auto;
-  border-radius: 0 0 20px 20px;
+  border-radius: 0 0 15px 15px;
 } 
 
 .logo {
@@ -390,12 +390,14 @@ section.stats-section {
 .numbers {
   display: flex;
   align-items: center;
-  margin-left: 142px;
 }
 
 .stats {
+  display: flex;
+  flex-direction: column;
   position: relative;
   text-align: center;
+  align-items: center;
   font-family: var(--russo);
 }
 
@@ -1047,10 +1049,29 @@ footer {
   top: 50px;
 }
 
+/* Mobilna verzija - responsiva  */
 
-
-
-
-
-
-
+@media only screen and (max-width: 1600px) {
+  .stats h2 {
+    font-size: 2.8rem;
+  }
+  .stats h1, .numbers span {
+    font-size: 3.8rem;
+  }
+  .read-more {
+    padding: 15px 35px;
+  } 
+  .dask-image {
+    width: 90%;
+  }
+  .left-dask p {
+    font-size: 1.2rem;
+  }
+  .main-h1 {
+    font-size: 2.8rem;
+  }
+  .components-colors h1{
+    font-size: 2rem;
+  }
+  
+}
