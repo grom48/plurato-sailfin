@@ -98,7 +98,7 @@ nav {
 nav.fixed-nav {
   position: fixed;
   top: 0;
-  transition: all 0.3s;
+  transition: 0.3s;
   background: var(--oceanGreen);
   width: 100%;
   padding: 15px;
@@ -1073,5 +1073,7 @@ footer {
   .components-colors h1{
     font-size: 2rem;
   }
-  
+  .map-contacts h2 {
+    font-size: 2rem;
+  }
 }

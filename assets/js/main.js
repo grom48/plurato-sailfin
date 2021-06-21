@@ -53,32 +53,11 @@ function scrollFunction() {
     function topFunction() {
       document.body.scrollTop = 0; // For Safari
       document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-  }
-  
-  // *On scroll navbar
-  
-   $(function () { 
-    $(window).scroll(function () {
-      if ($(this).scrollTop() > 150) {
-        $('.nav .main-logo ').attr('src','assets/img/white-logo2.svg');
-      }
-      if ($(this).scrollTop() < 150) {
-        $('.nav .main-logo').attr('src','assets/img/logo.svg');
-      }
-    }) 
-    $(window).scroll(function () {
-      if($(window).scrollTop() > 150) {
-        $("nav").addClass('fixed-nav');
-      } else {
-        $("nav").removeClass('fixed-nav');
-      }
-    });
-  });  
-  
-  
-  // !Click components
-  $(function () {
-    $(window).on('hashchange', function () {
+    }
+    
+    // !Click components
+    $(function () {
+      $(window).on('hashchange', function () {
       var tabContainers = $('.tabs > div'),
       hash = window.location.hash != '' ? window.location.hash : '#first';
       
@@ -91,11 +70,10 @@ function scrollFunction() {
     }).trigger('hashchange');
   });
 
-  
   // !Kopiraj adresu
   
   function Clipboard_CopyTo(value) {
-      let tempInput = document.createElement("input");
+    let tempInput = document.createElement("input");
       tempInput.value = value;
       document.body.appendChild(tempInput);
       tempInput.select();
@@ -106,20 +84,20 @@ function scrollFunction() {
     document.querySelector('#Copy').onclick = function() {
       Clipboard_CopyTo('Ul. Ruđera Boškovića 19, 21000, Split');
     }
-  
+    
     const button = document.querySelector(".copy-btn");
     const tooltips = document.querySelector(".tooltips");
-  
+    
     button.addEventListener("click", () => {
       tooltips.classList.add("show");
       setTimeout(function() {
-      tooltips.classList.remove("show");
+        tooltips.classList.remove("show");
     }, 700)
     })
   
-  // !Accordion
+    // !Accordion
   
-  const accordion = document.querySelector('.accordion');
+    const accordion = document.querySelector('.accordion');
   const items = accordion.querySelectorAll('.accordion__item');
   
   
@@ -140,8 +118,6 @@ function scrollFunction() {
       
     });
   });
-
-  
   
   const toggle_item = (item) => {
     const body = item.querySelector('.accordion__body');
