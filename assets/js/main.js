@@ -30,7 +30,7 @@ yellow.addEventListener("click", () => {
 })
 
 red.addEventListener("click", () => {
-    image.src = "assets/img/red-dask.png"
+    image.src = "assets/img/red-dask.svg"
 })
 
 

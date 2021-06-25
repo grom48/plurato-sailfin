@@ -1076,4 +1076,13 @@ footer {
   .map-contacts h2 {
     font-size: 2rem;
   }
+  .color-slider {
+    height: 220px;
+    width: 383px;
+  }
+  .yellow-dask {
+    width: 530px;
+    top: -281px;
+    left: -43%;
+  }
 }
