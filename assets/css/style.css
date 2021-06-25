@@ -627,6 +627,7 @@ section.dask {
 
 .product-item {
   position: relative;
+  display: flex;
 } 
 
 .one {
@@ -741,6 +742,17 @@ section.dask {
 .find-us {
   width: 100%;
   padding: 150px 50px;
+}
+
+.map {
+  margin: 20px;
+  width: 1000px;
+  border-radius: 20px;
+}
+
+.map iframe {
+  width: 1000px;
+  border-radius: 20px;
 }
 
 .map-section {
@@ -1062,7 +1074,8 @@ footer {
     padding: 15px 35px;
   } 
   .dask-image {
-    width: 90%;
+    width: 644px;
+    padding-top: 40px;
   }
   .left-dask p {
     font-size: 1.2rem;
@@ -1085,4 +1098,33 @@ footer {
     top: -281px;
     left: -43%;
   }
+  .info li p {
+    font-size: 2rem;
+  }
+  .components-dask {
+    width: 782px;
+  }
+  .map iframe, .map {
+    width: 800px;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .map iframe, .map {
+    width: 600px;
+  }
+  .dask-image {
+    width: 550px;
+    margin-top: 50px;
+  }
+  .yellow-dask {
+    width: 430px;
+    top: -219px;
+    left: -26%;
+  }
+  .color-slider {
+    height: 202px;
+    width: 350px;
+  }
+  
 }
