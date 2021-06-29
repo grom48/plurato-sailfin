@@ -1190,29 +1190,100 @@ footer {
   margin: 100px;
 }
 
-.slider-row {
-  margin-top: 150px!important;
+.hero {
+  margin-top: 300px;
+  margin-bottom: 800px;
+  width: 100%;
+  position: relative;
+}
+
+.slide-row {
   display: flex;
-  flex-direction: row;
-  width: 30200px;
+  width: 6000px;
+  transition: 0.5s;
 }
 
 .slide-col {
-  display: flex;
-  width: 3200px;
+  width: 1500px;
   height: 400px;
   position: relative;
 }
 
-
-.slide-col p {
-  width: 50%;
+.user-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
 }
 
-.spec-img {
-  background-image: url(../img/2dask.svg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 444px;
-  height: 334px;
+.user-img img {
+  height: 100%;
+  border-radius: 10px;
+}
+
+.user-text {
+  width: 622px;
+  height: 270px;
+  position: absolute;
+  left: 0;
+  top: 39%;
+  transform: translateY(-50%);
+  border-radius: 10px;
+  box-sizing: border-box;
+  z-index: 2;
+  padding-left: 20px;
+}
+
+.user-text p {
+  font-size: 1.125rem;
+  color: var(--grayText);
+}
+
+.user-text h2 {
+  font-size: 3rem;
+  color: var(--oceanGreen);
+  font-weight: 600;
+}
+
+.user-text h4 {
+  font-size: 2.25rem;
+  color: var(--oceanGreen);
+  font-weight: 600;
+}
+
+.container1 {
+  width: 1500px;
+  height: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.indicator {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -50px;
+}
+
+.btn-owl {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  margin: 4px;
+  border-radius: 15px;
+  background: var(--oceanGreen);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.active-owl {
+  width: 45px;
+}
+
+.testimonial {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
