@@ -1146,8 +1146,12 @@ footer {
 
 /* ! Dask styles */
 
+.main-dask {
+  width: 100%;
+}
+
 .showcase {
-  position: absolute; 
+  position: relative; 
   top: 0;
   right: 0;
   width: 100%;
@@ -1163,8 +1167,6 @@ footer {
   object-fit: cover;
   z-index: -100;
 }
-
-
 
 .text {
   position: relative;
@@ -1182,4 +1184,8 @@ footer {
 .text h4 {
   font-size: 2.875rem;
   color: var(--white);
+}
+
+.benefits {
+  margin: 100px;
 }
