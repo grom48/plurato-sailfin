@@ -1293,4 +1293,7 @@ footer {
 section .slider-image {
   background: url("../img/man-dask.png");
   background-size: cover;
+  height: 200px;
+  width: 200px;
 }
+
