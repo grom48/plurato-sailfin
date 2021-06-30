@@ -1287,3 +1287,10 @@ footer {
   height: 100%;
   overflow: hidden;
 }
+
+/* Slider Image */
+
+section .slider-image {
+  background: url("../img/man-dask.png");
+  background-size: cover;
+}
