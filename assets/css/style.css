@@ -1290,10 +1290,238 @@ footer {
 
 /* Slider Image */
 
-section .slider-image {
-  background: url("../img/man-dask.png");
+section.slider-image {
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
-  height: 200px;
-  width: 200px;
+  height: 100vh;
+  width: 100%;
 }
 
+.slider--content {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  height: 100vh;
+  padding-bottom: 50px;
+}
+
+.slider-image button {
+  background: none;
+  outline: none;
+  border: none;
+}
+
+.slider--feature button {
+  background-color: var(--oceanGreen);
+  padding: 15px 40px;
+  border-radius: 11px;
+  border: 1px solid var(--oceanGreen);
+  color: var(--white);
+  transition: 0.3s all ease;
+}
+
+.slider--feature button:hover {
+  background-color: transparent;
+  border: 1px solid var(--oceanGreen);
+  color: var(--oceanGreen);
+}
+
+.slider--heading {
+  color: var(--oceanGreen);
+  font-size: 4rem;
+  padding-bottom: 30px;
+  font-weight: 700;
+}
+
+.slider--heading-four {
+  color: var(--white);
+  font-size: 2.25rem;
+  width: 60%;
+  padding-bottom: 30px;
+  font-weight: 500;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.fadeIn {
+  animation: fadeIn 1s;
+}
+
+/* All You Get Styles */
+
+section.all-you-get {
+  margin: 150px;
+}
+
+.all-you-get-row {
+  padding-top: 100px;
+}
+
+.all-you-get_card {
+  background-color: var(--grayText);
+  height: 288px;
+  width: 247px;
+  border-radius: 11px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  position: absolute;
+  backface-visibility: hidden;
+  transition: .6s linear;
+  transform: perspective(600px) rotateY(0deg);
+  cursor: pointer;
+}
+
+.all-you-get_card h2 {
+  color: var(--oceanBlue);
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding-top: 10px;
+}
+
+.front-back {
+  position: relative;
+}
+
+.back {
+  position: absolute;
+  background-color: var(--grayText);
+  height: 288px;
+  width: 247px;
+  border-radius: 11px;
+  text-align: center;
+  transition: .6s linear;
+  z-index: -100;
+  transform: perspective(600px) rotateY(180deg);
+}
+
+.front-back:hover > .all-you-get_card {
+  transform: perspective(600px) rotateY(-180deg);
+}
+
+.front-back:hover > .back {
+  transform: perspective(600px) rotateY(0deg);
+}
+
+/* Price styles */
+
+section.price {
+  margin: 120px;
+  padding-top: 250px;
+}
+
+.price-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 430px;
+  height: 584px;
+  border-radius: 11px;
+  text-align: center;
+  color: var(--white);
+}
+
+.price-card h3 {
+  position: relative;
+  font-weight: 600;
+  font-size: 3rem;
+  width: 70%;
+  padding-bottom: 10px;
+}
+
+.price-card h3::after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 2px;
+  background-color: var(--white);
+  bottom: 0;
+  left: 0;
+}
+
+.price-card h5 {
+  position: relative;
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.price-card h5:after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 2px;
+  background-color: var(--white);
+  bottom: 0;
+  left: 0;
+}
+
+.price-card p {
+  font-size: 1.125rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.price-card a {
+  background-color: var(--white);
+  color: var(--oceanGreen);
+  padding: 10px 20px;
+  font-weight: 500;
+  border-radius: 11px;
+  margin-top: 20px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 1px solid var(--white);
+}
+
+.price-card a:hover {
+  background-color: transparent;
+  border: 1px solid var(--white);
+  color: var(--white);
+}
+
+.buy h5 {
+  width: 70%;
+}
+
+.buy a {
+  color: var(--oceanBlue);
+}
+
+.prices-lease-buy {
+  padding-top: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.lease {
+  background-color: var(--oceanGreen);
+}
+
+.buy {
+  background-color: var(--oceanBlue);
+}
+
+section.see-broshure {
+  text-align: center;
+}
+
+.see-broshure h2 {
+  color: var(--oceanGreen);
+  width: 35%;
+  margin: auto;
+  font-weight: 600;
+  font-size: 2.25rem;
+}
