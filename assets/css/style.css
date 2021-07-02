@@ -1525,3 +1525,145 @@ section.see-broshure {
   font-weight: 600;
   font-size: 2.25rem;
 }
+
+/* Contact styles */
+
+.contact-row {
+  padding-top: 200px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.contact-card--all {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-card {
+  border-radius: 11px;
+  width: 339px;
+  height: 520px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.mess {
+  background: #ebebeb;
+}
+
+.socials--card, .sales--card, .service--card, .location--card {
+  background: #ebebeb;
+  width: 339px;
+  margin-bottom: 20px;
+  height: 157px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 11px;
+}
+
+.service h3, .location--card h3{
+  color: var(--ligthBlue);
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.service p, .location--card p {
+  font-size: 1.125rem;
+  margin: 0;
+  color: var(--grayText);
+}
+
+.service a {
+  font-size: 2.75rem;
+  color: var(--ligthBlue);
+  padding-left: 10px;
+}
+
+.contact-card h4 {
+  font-size: 1.125rem;
+  color: var(--grayText);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.contact-form input, optgroup, select, textarea {
+  margin: 20px;
+  width: 100%;
+  border-radius: 11px;
+  border: 1px solid var(--ligthBlue);
+}
+
+.contact-form input {
+  height: 40px;
+}
+
+textarea {
+  height: 120px;
+}
+
+.contact-form button {
+  border: none;
+  outline: none;
+  background: var(--ligthBlue);
+  border-radius: 11px;
+  color: var(--white);
+  width: 142px;
+  height: 39px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.contact-h1 {
+  position: relative;
+  color: var(--ligthBlue);
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+.contact-h1::after {
+  content: '';
+  width: 131%;
+  height: 2px;
+  background: var(--ligthBlue);
+  position: absolute;
+  left: -16%;
+  bottom: 0;
+  margin-top: 20px;
+}
+
+.contact-form input::placeholder, .contact-form textarea::placeholder {
+  padding-left: 10px;
+  font-size: 11px;
+}
+
+.map-location {
+  align-items: start;
+  justify-content: start;
+}
+
+.map--contact_us {
+  border-radius: 11px;
+}
+
+.map--contact_us iframe {
+  border-radius: 11px;
+}
+
+.header-four {
+  padding-bottom: 30px;
+}

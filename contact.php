@@ -1,4 +1,4 @@
-<?php include 'sendemail.php'?>
+<?php include 'sendemail.php' ?>
 
 <!doctype html>
 <html lang="en">
@@ -22,20 +22,22 @@
     <script src="https://kit.fontawesome.com/d1bbe2042f.js" crossorigin="anonymous"></script>
     <title>Contact Us</title>
 </head>
-<body>
 <style>
     .line {
         stroke: #11699B;
     }
+
     .main {
         background: #11699B;
         color: #fff;
     }
 </style>
+<body>
 
 <nav class="nav">
     <div class="hamburger">
-        <svg class="ham" style="color: white" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')">
+        <svg class="ham" style="color: white" viewBox="0 0 100 100" width="80"
+             onclick="this.classList.toggle('active')">
             <path
                     class="line top"
                     d="m 70,33 h -40 c -11.092231,0 11.883874,13.496726 -3.420361,12.956839 -0.962502,-2.089471 -2.222071,-3.282996 -4.545687,-3.282996 -2.323616,0 -5.113897,2.622752 -5.113897,7.071068 0,4.448316 2.080609,7.007933 5.555839,7.007933 2.401943,0 2.96769,-1.283974 4.166879,-3.282995 2.209342,0.273823 4.031294,1.642466 5.857227,-0.252538 v -13.005715 16.288404 h 7.653568"/>
@@ -68,26 +70,64 @@
 
 
 <section class="contact-types">
-    <div class="row">
-        <div class="col-md-4">
-            
+    <div class="contact-row">
+        <div class="visit contact-card--all">
+            <h1 class="contact-h1">Visit us at <span><i class="fas fa-map-marker-alt"></i></span></h1>
+            <div class="contact-card map-location">
+                <div class="map--contact_us">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2893.7103349357344!2d16.464740515949!3d43.50837796980053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13355e2255016235%3A0x90b0907727f110ae!2zVWwuIFJ1xJFlcmEgQm_FoWtvdmnEh2EgMTksIDIxMDAwLCBTcGxpdA!5e0!3m2!1shr!2shr!4v1624626581960!5m2!1shr!2shr"
+                          width="339px" height="335px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div class="location--card">
+                    <h3>Plurato Europe</h3>
+                    <p>Ruđera Boškovića 19</p>
+                    <p>21 000 Split, Croatia</p>
+                </div>
+            </div>
         </div>
-        <div class="col-md-4">
-            
+        <div class="call-us contact-card--all">
+            <h1 class="contact-h1">Call us <span><i class="fas fa-phone"></i></span></h1>
+            <div class="contact-card service">
+                <div class="service--card">
+                    <h3>Service</h3>
+                    <p>service@plurato.com</p>
+                    <p>+385 91 33 77 877</p>
+                </div>
+                <div class="sales--card">
+                    <h3>Sales</h3>
+                    <p>sales@plurato.com</p>
+                    <p>+385 91 77 877</p>
+                    <p>+385 91 64 42 001</p>
+                </div>
+                <div class="socials--card">
+                    <h3>Socials</h3>
+                    <div class="icons-contact">
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-square"></i></a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="col-md-4">
-            <form action="sendemail.php" class="contact-form" method="post">
-                <input type="text" name="name" value="" placeholder="Full Name">
-                <input type="text" name="mail" value="" placeholder="Your Email">
-                <textarea name="message" placeholder="Message"></textarea>
-                <button type="submit" name="submit">SEND MAIL</button>
-            </form>
+        <div class="question contact-card--all">
+            <h1 class="contact-h1">Ask a questions <span><i class="far fa-envelope"></i></span></h1>
+            <div class="contact-card mess">
+                <div class="header-four">
+                    <h4>Ask anything you want.</h4>
+                    <h4>We will try reply fast us we can.</h4>
+                </div>
+                <form action="sendemail.php" class="contact-form" method="post">
+                    <input type="text" name="name" value="" placeholder="Full Name">
+                    <input type="text" name="mail" value="" placeholder="Your Email">
+                    <textarea name="message" placeholder="Message, question..."></textarea>
+                    <button type="submit" name="submit">Send</button>
+                </form>
+            </div>
         </div>
-    </div>
 </section>
 
 <script type="text/javascript">
-    if(window.history.replaceState) {
+    if (window.history.replaceState) {
         window.history.replaceState(null, null, window.location.href);
     }
 </script>
