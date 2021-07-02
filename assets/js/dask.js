@@ -39,6 +39,7 @@ const sliderBtnRight = document.querySelector(".slider--btn-right");
 const sliderHeading = document.querySelector(".slider--heading");
 const sliderHeadingFour = document.querySelector(".slider--heading-four");
 
+
 const sliderImage = [
   {
     src: "assets/img/man-dask.png",
