@@ -244,6 +244,8 @@ nav.fixed-nav {
 }
 
 .ham {
+  position: relative;
+  
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
   transition: transform 400ms;
