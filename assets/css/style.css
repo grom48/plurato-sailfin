@@ -1667,3 +1667,86 @@ textarea {
 .header-four {
   padding-bottom: 30px;
 }
+
+/* About us - styles */
+
+.about--header {
+  position: relative;
+  background-image: url(../img/about-us-bg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+
+.about-title {
+  position: absolute;
+  right: 5%;
+  bottom: 5%;
+}
+
+.about-title h1 {
+  font-size: 4.5rem;
+  color: var(--white);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.about-title h4 {
+  font-size: 3rem;
+  color: var(--white);
+  font-weight: 600;
+}
+
+.who-are-we, .our-goal, .we-dare-you {
+  margin: 150px;
+}
+
+.about-text {
+  font-size: 2rem;
+  color: var(--grayText);
+  padding-top: 40px;
+  width: 85%;
+}
+
+.who-row {
+  padding-top: 50px;
+}
+
+.card-who img {
+  border-radius: 11px;
+  -webkit-box-shadow: 15px 15px 0px 0px #026967; 
+  box-shadow: 15px 15px 0px 0px #026967;
+}
+
+.adrenaline {
+  margin: 100px;
+  text-align: center;
+}
+
+.adrenaline h1:after {
+  left: 46.5%;
+}
+
+.images-about {
+  display: flex;
+  padding-top: 100px;
+}
+
+.right-side-about {
+  display: flex;
+}
+
+.nixon {
+  padding-left: 24px;
+}
+
+.onfloor {
+  padding-left: 16px;
+}
+
+.rigth-side-down img {
+  padding-left: 24px;
+  padding-top: 24px;
+}
+
