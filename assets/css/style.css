@@ -96,8 +96,9 @@ nav {
 }
 
 nav.fixed-nav {
-  position: fixed;
+  position: sticky;
   top: 0;
+  left: 0;
   transition: 0.3s;
   background: var(--oceanGreen);
   width: 100%;
@@ -111,8 +112,10 @@ nav.fixed-nav {
 }
 
 .enyoy {
-  margin: 200px 120px 120px 120px;
   width: 27%;
+  position: absolute;
+  left: 92px;
+  top: 25vh;
 }
 
 .enyoy h1 {
@@ -503,6 +506,7 @@ section.dask {
   width: 137px;
   position: absolute;
   bottom: -20px;
+  border-radius: 11px;
 }
 
 .content-colors {
@@ -1751,4 +1755,5 @@ textarea {
   padding-left: 24px;
   padding-top: 24px;
 }
+
 
