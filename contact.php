@@ -51,7 +51,7 @@
 
         <div class="overlay">
             <ul class="links">
-                <li><a class="active" href="#">Home</a></li>
+                <li><a class="active" href="index.html">Home</a></li>
                 <li><a href="dask.html">Dasks</a></li>
                 <li><a href="our-story.html">Our Story</a></li>
                 <li><a href="contact.php">Contact Us</a></li>

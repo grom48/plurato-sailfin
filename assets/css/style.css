@@ -347,44 +347,7 @@ nav.fixed-nav {
   transform: scale(1, 1);
 }
 
-@media only screen and (max-width: 1000px) {
-  .logo {
-    width: 50%;
-  }
-  .logo img {
-    width: 80%;
-    margin: auto;
-  }
-}
 
-@media only screen and (max-width: 780px) {
-  .links {
-    flex-direction: column;
-  }
-  .main {
-    font-size: 1rem;
-    padding: 5px 10px;
-  }
-  .scroll-down img, .scroll-down, .scroll-content {
-    width: 80%;
-    text-align: center;
-  }
-  .scroll-content h1 {
-    left: 35%;
-    text-align: center;
-    font-size: 1.2rem;
-  }
-  .mouse::before {
-    transform: translate(-50%);
-  }
-  .explore {
-    font-size: 1rem;
-    padding: 10px 80px;
-  }
-  .enyoy h4 {
-    font-size: 1rem;
-  }
-}
 
 /* Stats section*/
 
@@ -1067,88 +1030,7 @@ footer {
   top: 50px;
 }
 
-/* Mobilna verzija - responsiva  */
 
-@media only screen and (max-width: 1600px) {
-  .stats h2 {
-    font-size: 2.8rem;
-  }
-  .stats h1, .numbers span {
-    font-size: 3.8rem;
-  }
-  .read-more {
-    padding: 15px 35px;
-  } 
-  .dask-image {
-    width: 644px;
-    padding-top: 40px;
-  }
-  .left-dask p {
-    font-size: 1.2rem;
-  }
-  .main-h1 {
-    font-size: 2.8rem;
-  }
-  .components-colors h1{
-    font-size: 2rem;
-  }
-  .map-contacts h2 {
-    font-size: 2rem;
-  }
-  .color-slider {
-    height: 220px;
-    width: 383px;
-  }
-  .yellow-dask {
-    width: 530px;
-    top: -281px;
-    left: -43%;
-  }
-  .info li p {
-    font-size: 2rem;
-  }
-  .components-dask {
-    width: 782px;
-  }
-  .map iframe, .map {
-    width: 800px;
-  }
-}
-
-@media only screen and (max-width: 1300px) {
-  .map iframe, .map {
-    width: 600px;
-  }
-  .dask-image {
-    width: 550px;
-    margin-top: 50px;
-  }
-  .yellow-dask {
-    width: 430px;
-    top: -219px;
-    left: -26%;
-  }
-  .color-slider {
-    height: 202px;
-    width: 350px;
-  }
-  .footer-links li a {
-    font-size: 1.5rem;
-  }
-  .brochure a {
-    padding: 8px 18px;
-    font-size: 1.125rem;
-  }
-  .white-logo img {
-    width: 250px;
-  }
-  .icons a i {
-    font-size: 35px;
-  }
-  .stuff-footer h4 {
-    font-size: 1rem;
-  }
-}
 
 /* ! Dask styles */
 
@@ -1225,6 +1107,7 @@ footer {
 .user-img img {
   height: 100%;
   border-radius: 10px;
+  margin-left: 10px;
 }
 
 .user-text {
@@ -1237,7 +1120,7 @@ footer {
   border-radius: 10px;
   box-sizing: border-box;
   z-index: 2;
-  padding-left: 20px;
+  margin-left: 20px;
 }
 
 .user-text p {
@@ -1756,4 +1639,149 @@ textarea {
   padding-top: 24px;
 }
 
+/* Mobilna verzija - responsiva  */
+
+@media only screen and (max-width: 1600px) {
+  .stats h2 {
+    font-size: 2.8rem;
+  }
+  .stats h1, .numbers span {
+    font-size: 3.8rem;
+  }
+  .read-more {
+    padding: 15px 35px;
+  } 
+  .dask-image {
+    width: 644px;
+    padding-top: 40px;
+  }
+  .left-dask p {
+    font-size: 1.2rem;
+  }
+  .main-h1 {
+    font-size: 2.8rem;
+  }
+  .components-colors h1{
+    font-size: 2rem;
+  }
+  .map-contacts h2 {
+    font-size: 2rem;
+  }
+  .color-slider {
+    height: 220px;
+    width: 383px;
+  }
+  .yellow-dask {
+    width: 530px;
+    top: -281px;
+    left: -43%;
+  }
+  .info li p {
+    font-size: 2rem;
+  }
+  .components-dask {
+    width: 782px;
+  }
+  .map iframe, .map {
+    width: 800px;
+  }
+}
+
+@media only screen and (max-width: 1550px) {
+  .user-text {
+    left: 1000px;
+  }
+  .user-text h2 {
+    font-size: 2.5rem;
+  }
+  .user-text h4 {
+    font-size: 1.75rem;
+  }
+  .user-text p {
+    font-size: 0.625rem;
+  }
+  .user-img {
+    width: 200px;
+    left: -144%;
+    position: relative;
+    top: -25%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .logo {
+    width: 50%;
+  }
+  .logo img {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+
+
+@media only screen and (max-width: 1300px) {
+  .map iframe, .map {
+    width: 600px;
+  }
+  .dask-image {
+    width: 550px;
+    margin-top: 50px;
+    margin-left: 20px;
+  }
+  .yellow-dask {
+    width: 430px;
+    top: -219px;
+    left: -26%;
+  }
+  .color-slider {
+    height: 202px;
+    width: 350px;
+  }
+  .footer-links li a {
+    font-size: 1.5rem;
+  }
+  .brochure a {
+    padding: 8px 18px;
+    font-size: 1.125rem;
+  }
+  .white-logo img {
+    width: 250px;
+  }
+  .icons a i {
+    font-size: 35px;
+  }
+  .stuff-footer h4 {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  .links {
+    flex-direction: column;
+  }
+  .main {
+    font-size: 1rem;
+    padding: 5px 10px;
+  }
+  .scroll-down img, .scroll-down, .scroll-content {
+    width: 80%;
+    text-align: center;
+  }
+  .scroll-content h1 {
+    left: 35%;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  .mouse::before {
+    transform: translate(-50%);
+  }
+  .explore {
+    font-size: 1rem;
+    padding: 10px 80px;
+  }
+  .enyoy h4 {
+    font-size: 1rem;
+  }
+}
 
